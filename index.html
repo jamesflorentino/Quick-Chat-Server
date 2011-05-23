@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Quick Chat Server</title>
+	<!-- SMART ASS PEOPLE VIEW THE SOURCE CODE 
+		WEll. Cut me some slack. I just built this app in a day. 
+		It might contain some bugs, and the server might crash on certain times.
+		you may email me here: j@jamesflorentino.com if you're interested in working with me.
+	-->
+	<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='font/woff' />
+	<link rel = "stylesheet" type="text/css" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="http://111.68.56.244:1337/socket.io/socket.io.js"></script>
+	<script src="/client.js"></script>
+  </head>
+  
+	<body>
+		<div id="overlay"><div id="hold"><span>Type your name</span><input id="typename" maxlength="15"></input></div></div>
+		<div id="container">
+			<h1>Quick Chat Server</h1>
+			<p class="body">
+				This is a chat server I built as my nodejs and websockets experiment.<br>
+				This application does not utilize any form of database. <br>
+				Hence, all ongoing chats will be deleted from your end once you refresh the page.
+			</p>
+			<p><div id="textbox"><div id="contenttext"></div></div></p>
+			<div id="userlist">
+				<ul id="ulist">
+				</ul>
+			</div>
+			<p><span id="username">Welcome, <strong>User</strong> !</span><br>
+				<input  id="typein" class="chatfont"></input></p>
+			<div id="footer">
+				<p class="body">
+					Code by : James Florentino <a href="http://twitter.com/jamesflorentino" target="_blank">@jamesflorentino</a><br>
+					Technology: <a href="http://nodejs.org/" target="_blank"> nodejs</a> and <a href="http://socket.io" target="_blank">socket.io</a>
+					</p>
+			</div>
+		</div>
+  	</body>
+
+	
+</html>
